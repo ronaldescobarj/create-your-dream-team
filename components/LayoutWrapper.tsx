@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 
 interface LayoutWrapperProps {
   children: React.ReactNode;
@@ -7,9 +8,7 @@ interface LayoutWrapperProps {
 function LayoutWrapper({ children }: LayoutWrapperProps) {
   return (
     <>
-      <header>
-        <h3>Header</h3>
-      </header>
+      <Header />
       <main>{children}</main>
       <footer>Footer</footer>
     </>
